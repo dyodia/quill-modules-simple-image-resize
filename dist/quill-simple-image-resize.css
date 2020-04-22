@@ -1,0 +1,4 @@
+.ql-snow .ql-tooltip[data-mode=simple-image-resize]::before {
+  content: "image width:";
+}
+

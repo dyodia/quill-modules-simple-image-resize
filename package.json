@@ -1,0 +1,37 @@
+{
+  "name": "quill-modules-simple-image-resize",
+  "version": "1.0.0",
+  "description": "A module for Quill to allow images to be resized.",
+  "main": "dist/QuillSimpleImageResize.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "demo-build": "webpack --config demo.webpack.config.js",
+    "start": "webpack-dev-server --open --config demo.webpack.config.js"
+  },
+  "keywords": [
+    "quill",
+    "quilljs",
+    "image",
+    "resize"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/quill": "^2.0.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.1.4",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "parchment": "^2.0.0-dev.2",
+    "quill": "^1.2.2"
+  }
+}
