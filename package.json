@@ -2,7 +2,7 @@
   "name": "quill-modules-simple-image-resize",
   "version": "1.0.0",
   "description": "A module for Quill to allow images to be resized.",
-  "main": "dist/QuillSimpleImageResize.js",
+  "main": "dist/quill-simple-image-resize.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
