@@ -7,6 +7,8 @@ module.exports = {
   output: {
     filename: 'quill-simple-image-resize.js',
     path: path.resolve(__dirname, 'dist'),
+    library: 'quill-simple-image-resize',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [

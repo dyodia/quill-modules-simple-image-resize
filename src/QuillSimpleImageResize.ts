@@ -21,8 +21,8 @@ export default class QuillSimpleImageResize {
     tooltip.save = () => {
       if(tooltip.root.getAttribute('data-mode') == MODULE_ID){
         let value = tooltip.textbox.value;
-        const blob = this.find(this.img);
-        const index = this.quill.getIndex(blob);
+        const blot = this.img['__blot']['blot']
+        const index = this.quill.getIndex(blot);
         this.quill.setSelection(index, 1);
         value = this.sanitizeValue(value);
         if(!value){ return; }
@@ -57,13 +57,7 @@ export default class QuillSimpleImageResize {
     if(!this.quill['theme'].tooltip){ return; }
     let width = target.getAttribute('width');
     if(!width || width === ''){ width = target.clientWidth + 'px'}
-    this.quill['theme'].tooltip.edit(MODULE_ID, width)
-    }
-    find(node: Node){
-      return this.Quill.find(node)
-    }
-    get Quill() {
-      return window['Quill'];
+      this.quill['theme'].tooltip.edit(MODULE_ID, width)
     }
   }
   if (window['Quill']) {

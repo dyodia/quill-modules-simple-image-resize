@@ -2,10 +2,11 @@
   "compilerOptions": {
     "sourceMap": true,
     "target": "es5",
-    "module": "es2015",
+    "module": "es6",
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "moduleResolution": "node"
   },
   "exclude": ["node_modules"]
 }
